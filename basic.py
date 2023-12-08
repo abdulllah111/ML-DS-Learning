@@ -56,7 +56,7 @@ df = pd.read_csv('ComputerRepairing.csv', sep=',')
 
 df["isNum"] = df["price"].apply(lambda x: x.isnumeric())
 
-# Добавить колонки в которой отображается является ли элемент колонки "Цена в рублях" числом
+# является ли элемент колонки "Цена в рублях" числом
 df["price"] = df["price"].apply(lambda x: x.isnumeric() and int(x) or 0)
 
 # print(df[df.isNum == True]['price'])
