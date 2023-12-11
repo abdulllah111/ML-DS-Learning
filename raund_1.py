@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 '''
 
 
-data = pd.read_csv("test/sales.csv")
+data = pd.read_csv("sample_data/sales.csv")
 
 # Сумма продаж по регионам
 region_sum = data.groupby(['Region']).sum()['Total Profit']

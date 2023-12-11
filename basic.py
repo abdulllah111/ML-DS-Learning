@@ -72,7 +72,7 @@ plt.style.use('bmh')
 print(plt.style.available)
 # fig, ax = plt.subplots(figsize=(10, 5))
 
-df = pd.read_csv('titanic/test.csv', sep=',')
+df = pd.read_csv('titanic/sample_data.csv', sep=',')
 # df['Age'].plot.hist()
 
 # ax.pie(df['Age'].value_counts(), labels=df['Age'].value_counts().index, autopct='%1.1f%%')
